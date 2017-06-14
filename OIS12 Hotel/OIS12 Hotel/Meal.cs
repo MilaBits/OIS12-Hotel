@@ -19,7 +19,7 @@ namespace OIS12_Hotel {
             get { return guests; }
             set { guests = value; }
         }
-        
+
         public DateTime Date {
             get { return date; }
             set { date = value; }

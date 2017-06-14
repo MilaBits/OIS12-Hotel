@@ -1,24 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace OIS12_Hotel {
     public class Room {
 
+        // FIELDS
         private int name;
         private int capacity;
         private List<Guest> occupants;
 
+        //PROPERTIES
         public int Name {
             get { return name; }
-            set { name = value; }
+            //set { name = value; }
         }
-
         public int Capacity {
             get { return capacity; }
-            set { capacity = value; }
+            //set { capacity = value; }
         }
         public List<Guest> Occupants {
             get { return occupants; }
@@ -32,7 +29,6 @@ namespace OIS12_Hotel {
                 return true;
             }
         }
-
         public Room() {
         }
         public Room(int name, int capacity) {

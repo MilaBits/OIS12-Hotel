@@ -27,6 +27,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.flpGuests = new System.Windows.Forms.FlowLayoutPanel();
             this.gbGuest1 = new System.Windows.Forms.GroupBox();
+            this.tbGuest1Meal = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnGuest1Remove = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.tbGuest1Nr = new System.Windows.Forms.TextBox();
@@ -36,15 +38,9 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.tbGuest1Street = new System.Windows.Forms.TextBox();
-            this.btnAddGuest = new System.Windows.Forms.Button();
-            this.cbbRooms = new System.Windows.Forms.ComboBox();
-            this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
-            this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbGuest1Meal = new System.Windows.Forms.ComboBox();
             this.gbGuest2 = new System.Windows.Forms.GroupBox();
+            this.tbGuest2Meal = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnGuest2Remove = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tbGuest2Nr = new System.Windows.Forms.TextBox();
@@ -55,6 +51,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tbGuest2Street = new System.Windows.Forms.TextBox();
             this.gbGuest3 = new System.Windows.Forms.GroupBox();
+            this.tbGuest3Meal = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.btnGuest3Remove = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.tbGuest3Nr = new System.Windows.Forms.TextBox();
@@ -64,7 +62,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.tbGuest3Street = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbGuest4 = new System.Windows.Forms.GroupBox();
+            this.tbGuest4Meal = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.btnGuest4Remove = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.tbGuest4Nr = new System.Windows.Forms.TextBox();
@@ -74,17 +74,17 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tbGuest4Street = new System.Windows.Forms.TextBox();
-            this.tbGuest4Meal = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.tbGuest3Meal = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbGuest2Meal = new System.Windows.Forms.ComboBox();
+            this.btnAddGuest = new System.Windows.Forms.Button();
+            this.cbbRooms = new System.Windows.Forms.ComboBox();
+            this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.flpGuests.SuspendLayout();
             this.gbGuest1.SuspendLayout();
             this.gbGuest2.SuspendLayout();
             this.gbGuest3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbGuest4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnPlaceBooking
@@ -119,7 +119,7 @@
             this.flpGuests.Controls.Add(this.gbGuest1);
             this.flpGuests.Controls.Add(this.gbGuest2);
             this.flpGuests.Controls.Add(this.gbGuest3);
-            this.flpGuests.Controls.Add(this.groupBox1);
+            this.flpGuests.Controls.Add(this.gbGuest4);
             this.flpGuests.Location = new System.Drawing.Point(15, 91);
             this.flpGuests.Name = "flpGuests";
             this.flpGuests.Size = new System.Drawing.Size(316, 289);
@@ -146,6 +146,27 @@
             this.gbGuest1.TabStop = false;
             this.gbGuest1.Text = "Gast";
             this.gbGuest1.Visible = false;
+            // 
+            // tbGuest1Meal
+            // 
+            this.tbGuest1Meal.FormattingEnabled = true;
+            this.tbGuest1Meal.Items.AddRange(new object[] {
+            "Ontbijt",
+            "Diner",
+            "Beide"});
+            this.tbGuest1Meal.Location = new System.Drawing.Point(52, 97);
+            this.tbGuest1Meal.Name = "tbGuest1Meal";
+            this.tbGuest1Meal.Size = new System.Drawing.Size(159, 21);
+            this.tbGuest1Meal.TabIndex = 29;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(8, 97);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 13);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Maaltijd";
             // 
             // btnGuest1Remove
             // 
@@ -221,80 +242,6 @@
             this.tbGuest1Street.Size = new System.Drawing.Size(159, 20);
             this.tbGuest1Street.TabIndex = 15;
             // 
-            // btnAddGuest
-            // 
-            this.btnAddGuest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddGuest.Enabled = false;
-            this.btnAddGuest.Location = new System.Drawing.Point(235, 12);
-            this.btnAddGuest.Name = "btnAddGuest";
-            this.btnAddGuest.Size = new System.Drawing.Size(96, 23);
-            this.btnAddGuest.TabIndex = 22;
-            this.btnAddGuest.Text = "Gast Toevoegen";
-            this.btnAddGuest.UseVisualStyleBackColor = true;
-            this.btnAddGuest.Click += new System.EventHandler(this.btnAddGuest_Click);
-            // 
-            // cbbRooms
-            // 
-            this.cbbRooms.FormattingEnabled = true;
-            this.cbbRooms.Location = new System.Drawing.Point(79, 12);
-            this.cbbRooms.Name = "cbbRooms";
-            this.cbbRooms.Size = new System.Drawing.Size(150, 21);
-            this.cbbRooms.TabIndex = 24;
-            this.cbbRooms.SelectedIndexChanged += new System.EventHandler(this.cbbRooms_SelectedIndexChanged);
-            // 
-            // dtpEndDate
-            // 
-            this.dtpEndDate.Location = new System.Drawing.Point(79, 65);
-            this.dtpEndDate.Name = "dtpEndDate";
-            this.dtpEndDate.Size = new System.Drawing.Size(252, 20);
-            this.dtpEndDate.TabIndex = 27;
-            // 
-            // dtpStartDate
-            // 
-            this.dtpStartDate.Location = new System.Drawing.Point(79, 39);
-            this.dtpStartDate.Name = "dtpStartDate";
-            this.dtpStartDate.Size = new System.Drawing.Size(252, 20);
-            this.dtpStartDate.TabIndex = 26;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(12, 71);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(62, 13);
-            this.label20.TabIndex = 28;
-            this.label20.Text = "Eind Datum";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(12, 45);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(63, 13);
-            this.label21.TabIndex = 25;
-            this.label21.Text = "Start Datum";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 97);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 13);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Maaltijd";
-            // 
-            // tbGuest1Meal
-            // 
-            this.tbGuest1Meal.FormattingEnabled = true;
-            this.tbGuest1Meal.Items.AddRange(new object[] {
-            "Ontbijt",
-            "Diner",
-            "Beide"});
-            this.tbGuest1Meal.Location = new System.Drawing.Point(52, 97);
-            this.tbGuest1Meal.Name = "tbGuest1Meal";
-            this.tbGuest1Meal.Size = new System.Drawing.Size(159, 21);
-            this.tbGuest1Meal.TabIndex = 29;
-            // 
             // gbGuest2
             // 
             this.gbGuest2.Controls.Add(this.tbGuest2Meal);
@@ -316,6 +263,27 @@
             this.gbGuest2.TabStop = false;
             this.gbGuest2.Text = "Gast";
             this.gbGuest2.Visible = false;
+            // 
+            // tbGuest2Meal
+            // 
+            this.tbGuest2Meal.FormattingEnabled = true;
+            this.tbGuest2Meal.Items.AddRange(new object[] {
+            "Ontbijt",
+            "Diner",
+            "Beide"});
+            this.tbGuest2Meal.Location = new System.Drawing.Point(52, 97);
+            this.tbGuest2Meal.Name = "tbGuest2Meal";
+            this.tbGuest2Meal.Size = new System.Drawing.Size(159, 21);
+            this.tbGuest2Meal.TabIndex = 29;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 97);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Maaltijd";
             // 
             // btnGuest2Remove
             // 
@@ -413,6 +381,27 @@
             this.gbGuest3.Text = "Gast";
             this.gbGuest3.Visible = false;
             // 
+            // tbGuest3Meal
+            // 
+            this.tbGuest3Meal.FormattingEnabled = true;
+            this.tbGuest3Meal.Items.AddRange(new object[] {
+            "Ontbijt",
+            "Diner",
+            "Beide"});
+            this.tbGuest3Meal.Location = new System.Drawing.Point(52, 97);
+            this.tbGuest3Meal.Name = "tbGuest3Meal";
+            this.tbGuest3Meal.Size = new System.Drawing.Size(159, 21);
+            this.tbGuest3Meal.TabIndex = 29;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(8, 97);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Maaltijd";
+            // 
             // btnGuest3Remove
             // 
             this.btnGuest3Remove.Location = new System.Drawing.Point(218, 97);
@@ -487,27 +476,48 @@
             this.tbGuest3Street.Size = new System.Drawing.Size(159, 20);
             this.tbGuest3Street.TabIndex = 15;
             // 
-            // groupBox1
+            // gbGuest4
             // 
-            this.groupBox1.Controls.Add(this.tbGuest4Meal);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.btnGuest4Remove);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.tbGuest4Nr);
-            this.groupBox1.Controls.Add(this.tbGuest4Name);
-            this.groupBox1.Controls.Add(this.tbGuest4City);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.tbGuest4Street);
-            this.groupBox1.Location = new System.Drawing.Point(3, 381);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(285, 127);
-            this.groupBox1.TabIndex = 27;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Gast";
-            this.groupBox1.Visible = false;
+            this.gbGuest4.Controls.Add(this.tbGuest4Meal);
+            this.gbGuest4.Controls.Add(this.label13);
+            this.gbGuest4.Controls.Add(this.btnGuest4Remove);
+            this.gbGuest4.Controls.Add(this.label14);
+            this.gbGuest4.Controls.Add(this.tbGuest4Nr);
+            this.gbGuest4.Controls.Add(this.tbGuest4Name);
+            this.gbGuest4.Controls.Add(this.tbGuest4City);
+            this.gbGuest4.Controls.Add(this.label15);
+            this.gbGuest4.Controls.Add(this.label16);
+            this.gbGuest4.Controls.Add(this.label17);
+            this.gbGuest4.Controls.Add(this.tbGuest4Street);
+            this.gbGuest4.Location = new System.Drawing.Point(3, 381);
+            this.gbGuest4.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.gbGuest4.Name = "gbGuest4";
+            this.gbGuest4.Size = new System.Drawing.Size(285, 127);
+            this.gbGuest4.TabIndex = 27;
+            this.gbGuest4.TabStop = false;
+            this.gbGuest4.Text = "Gast";
+            this.gbGuest4.Visible = false;
+            // 
+            // tbGuest4Meal
+            // 
+            this.tbGuest4Meal.FormattingEnabled = true;
+            this.tbGuest4Meal.Items.AddRange(new object[] {
+            "Ontbijt",
+            "Diner",
+            "Beide"});
+            this.tbGuest4Meal.Location = new System.Drawing.Point(52, 97);
+            this.tbGuest4Meal.Name = "tbGuest4Meal";
+            this.tbGuest4Meal.Size = new System.Drawing.Size(159, 21);
+            this.tbGuest4Meal.TabIndex = 29;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(8, 97);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 13);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Maaltijd";
             // 
             // btnGuest4Remove
             // 
@@ -583,68 +593,60 @@
             this.tbGuest4Street.Size = new System.Drawing.Size(159, 20);
             this.tbGuest4Street.TabIndex = 15;
             // 
-            // tbGuest4Meal
+            // btnAddGuest
             // 
-            this.tbGuest4Meal.FormattingEnabled = true;
-            this.tbGuest4Meal.Items.AddRange(new object[] {
-            "Ontbijt",
-            "Diner",
-            "Beide"});
-            this.tbGuest4Meal.Location = new System.Drawing.Point(52, 97);
-            this.tbGuest4Meal.Name = "tbGuest4Meal";
-            this.tbGuest4Meal.Size = new System.Drawing.Size(159, 21);
-            this.tbGuest4Meal.TabIndex = 29;
+            this.btnAddGuest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddGuest.Enabled = false;
+            this.btnAddGuest.Location = new System.Drawing.Point(235, 12);
+            this.btnAddGuest.Name = "btnAddGuest";
+            this.btnAddGuest.Size = new System.Drawing.Size(96, 23);
+            this.btnAddGuest.TabIndex = 22;
+            this.btnAddGuest.Text = "Gast Toevoegen";
+            this.btnAddGuest.UseVisualStyleBackColor = true;
+            this.btnAddGuest.Click += new System.EventHandler(this.btnAddGuest_Click);
             // 
-            // label13
+            // cbbRooms
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(8, 97);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(43, 13);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "Maaltijd";
+            this.cbbRooms.FormattingEnabled = true;
+            this.cbbRooms.Location = new System.Drawing.Point(79, 12);
+            this.cbbRooms.Name = "cbbRooms";
+            this.cbbRooms.Size = new System.Drawing.Size(150, 21);
+            this.cbbRooms.TabIndex = 24;
+            this.cbbRooms.SelectedIndexChanged += new System.EventHandler(this.cbbRooms_SelectedIndexChanged);
             // 
-            // tbGuest3Meal
+            // dtpEndDate
             // 
-            this.tbGuest3Meal.FormattingEnabled = true;
-            this.tbGuest3Meal.Items.AddRange(new object[] {
-            "Ontbijt",
-            "Diner",
-            "Beide"});
-            this.tbGuest3Meal.Location = new System.Drawing.Point(52, 97);
-            this.tbGuest3Meal.Name = "tbGuest3Meal";
-            this.tbGuest3Meal.Size = new System.Drawing.Size(159, 21);
-            this.tbGuest3Meal.TabIndex = 29;
+            this.dtpEndDate.Location = new System.Drawing.Point(79, 65);
+            this.dtpEndDate.Name = "dtpEndDate";
+            this.dtpEndDate.Size = new System.Drawing.Size(252, 20);
+            this.dtpEndDate.TabIndex = 27;
+            this.dtpEndDate.Value = new System.DateTime(2017, 6, 8, 12, 40, 36, 0);
             // 
-            // label8
+            // dtpStartDate
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(8, 97);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Maaltijd";
+            this.dtpStartDate.Location = new System.Drawing.Point(79, 39);
+            this.dtpStartDate.Name = "dtpStartDate";
+            this.dtpStartDate.Size = new System.Drawing.Size(252, 20);
+            this.dtpStartDate.TabIndex = 26;
+            this.dtpStartDate.Value = new System.DateTime(2017, 6, 8, 0, 0, 0, 0);
             // 
-            // label1
+            // label20
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 97);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Maaltijd";
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(12, 71);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(62, 13);
+            this.label20.TabIndex = 28;
+            this.label20.Text = "Eind Datum";
             // 
-            // tbGuest2Meal
+            // label21
             // 
-            this.tbGuest2Meal.FormattingEnabled = true;
-            this.tbGuest2Meal.Items.AddRange(new object[] {
-            "Ontbijt",
-            "Diner",
-            "Beide"});
-            this.tbGuest2Meal.Location = new System.Drawing.Point(52, 97);
-            this.tbGuest2Meal.Name = "tbGuest2Meal";
-            this.tbGuest2Meal.Size = new System.Drawing.Size(159, 21);
-            this.tbGuest2Meal.TabIndex = 29;
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(12, 45);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(63, 13);
+            this.label21.TabIndex = 25;
+            this.label21.Text = "Start Datum";
             // 
             // NewGuestForm
             // 
@@ -669,8 +671,8 @@
             this.gbGuest2.PerformLayout();
             this.gbGuest3.ResumeLayout(false);
             this.gbGuest3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbGuest4.ResumeLayout(false);
+            this.gbGuest4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -718,7 +720,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox tbGuest3Street;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbGuest4;
         private System.Windows.Forms.Button btnGuest4Remove;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox tbGuest4Nr;

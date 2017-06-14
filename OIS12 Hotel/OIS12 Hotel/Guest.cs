@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OIS12_Hotel {
+﻿namespace OIS12_Hotel {
     public class Guest {
         private string name;
         private string adress;
